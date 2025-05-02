@@ -31,4 +31,4 @@ Get-WinEvent -FilterHashtable @{LogName = "Application"; ID = 11707; ProviderNam
 }
 
 $events = @($events | Sort-Object -Property TimeCreated -Descending)
-$events | Out-GridView -Title "Software Installations"
+$events | Out-GridView -Title "Software Installation Events"
